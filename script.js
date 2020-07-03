@@ -95,7 +95,7 @@ function sendID(id) {
 function sendHref(img){
     var pic = img;
     document.getElementById('openPicture').innerHTML = 
-                        `<a href="#cities__info" class="city__close--white" onclick="sendID('Amsterdam')">&times;</a>
+                        `<a href="#cities__info" class="city__close--white">&times;</a>
                         <div class="img__content">
                             <img src="./${pic}" alt="img main" class="img__full">
                         </div>
@@ -103,11 +103,13 @@ function sendHref(img){
 }
 
 
+const closeUrlFullImg = document.querySelector(".city__close--white");
 
+closeUrlFullImg.addEventListener('click', moveBack());
 
-
-
-
+function moveBack() {
+        window.history.go(-1);
+    }
 
 
 
