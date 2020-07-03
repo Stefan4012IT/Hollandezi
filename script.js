@@ -53,7 +53,7 @@ function sendID(id) {
                     document.getElementById('cities__info').innerHTML = 
                         `<a href="#blabla" class="city__close">&times;</a>
                         <h1 class="cityName" id="cityName">${city.cityName}</h1>
-                        <div class="photo__galery" id="photo__galery">
+                        <div class="photo__gallery" id="photo__gallery">
                         </div>
                         <p class="population"><span>Population:</span>${city.population}</p>
                         <p class="about">${city.about}</p>
@@ -69,7 +69,7 @@ function sendID(id) {
                         }
                     for (var z = 0; z < city.photos.length; z++){
                         var href = city.photos[z];
-                                document.getElementById("photo__galery").insertAdjacentHTML("beforeend", `
+                                document.getElementById("photo__gallery").insertAdjacentHTML("beforeend", `
                                 <a href="#openPicture" id="picture" onclick="sendHref('${href}')">
                                     <img class="profilPhoto" src="./${href}" alt="${city.cityName}_${z} id="profilPhoto">
                                 </a>

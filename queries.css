@@ -1,0 +1,59 @@
+/*Big screens to 1500px width */
+
+@media only screen and (max-width:1500px){
+    .hey-you {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hey-you > div p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    body {
+    display: grid;
+    grid-template-columns: 100vw;
+    }
+
+    .blabla{
+        padding-top: 175px;
+        grid-column: 1/2;
+    }
+    
+    .hey-you > div p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    h2 {
+        font-size: 35px;
+    }
+    
+    
+    .hey-you > div p {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width:650px){
+    h2 {
+        font-size: 35px;
+    }
+    
+    .blabla{
+        padding-top: 0px;
+    }
+    .hey-you {
+        height: 100vh;;
+    }
+    .hey-you > div p {
+        font-size: 8px;
+    }
+    .hey-you > div {
+        flex: 1;
+    }
+}

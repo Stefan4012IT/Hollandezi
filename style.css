@@ -17,6 +17,7 @@ body {
 .blabla{
     padding-top: 175px;
     grid-column: 2/3;
+    height: 100vh;
 }
 
 .hey-you {
@@ -24,18 +25,21 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     flex-direction: column;
+    height: 100vh;
 }
 
 .hey-you > div {
     display: flex;
-    height: 50px;
+    flex: 1;
+    /*height: 50px;*/
     align-items: center;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    justify-content: center;
 }
 
-.hey-you > div:first-child {
+/*.hey-you > div:first-child {
     margin-top: 30px;
-}
+}*/
 
 .hey-you > div p {
     font-size: 21px;
@@ -269,7 +273,7 @@ p {
     transform: scale(1.4);
 }
 
-.photo__galery {
+.photo__gallery {
     position: relative;
     width: 100vw;
     height: 235px;
@@ -284,23 +288,26 @@ p {
 }
 
 
-.photo__galery::-webkit-scrollbar {
+.photo__gallery::-webkit-scrollbar {
     height: 10px;
 }
-.photo__galery::-webkit-scrollbar-track {
+.photo__gallery::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px #162545;
     
 }
-.photo__galery::-webkit-scrollbar-thumb {
+.photo__gallery::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
     
 }
 
-.photo__galery::-webkit-scrollbar-thumb {
+.photo__gallery::-webkit-scrollbar-thumb {
     background: #162545;
 }
 
+.photo__gallery > img:last-child {
+    margin-right: 30px;
+}
 
 
 .profilPhoto {
