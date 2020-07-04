@@ -7,6 +7,7 @@ function sendID(id) {
         .then((resp) => resp.json())
         .then((data) => {
             data.forEach(function(city){
+                
                 if(id === city.cityName){
                     document.getElementById('cities__info').innerHTML = 
                         `<a href="#blabla" class="city__close">&times;</a>
@@ -25,19 +26,24 @@ function sendID(id) {
                                 document.getElementById("link").insertAdjacentHTML("beforeend", `<a href="${attrValue}" class="webLinks" id="webLinks">${attrName} ||| </a>`)
                             }
                         }
+                    let arrImg = [];
+                    for (var x=0; x < city.photos.length; x++){
+                        arrImg.push(city.photos[x]);
+                    }
+                    
                     for (var z = 0; z < city.photos.length; z++){
                         var href = city.photos[z];
-                                document.getElementById("photo__gallery").insertAdjacentHTML("beforeend", `
-                                <a href="#openPicture" id="picture" onclick="sendHref('${href}')">
-                                    <img class="profilPhoto" src="./${href}" alt="${city.cityName}_${z} id="profilPhoto">
-                                </a>
-                                
-                                `);
-                                
+                        
+                        document.getElementById("photo__gallery").insertAdjacentHTML("beforeend", `
+                        <a href="#openPicture" id="picture" onclick="sendHref('${href}', '${arrImg}')">
+                            <img class="profilPhoto" src="./${href}" alt="${city.cityName}_${z}" id="profilPhoto">
+                        </a>
+                        `);
+                      
+                        
                             
                         }
-                    const closeUrlInfo = document.querySelector('.city__close');
-                    closeUrlInfo.addEventListener('click', moveBack);
+                    
                     
                     }
                     
@@ -46,22 +52,112 @@ function sendID(id) {
         
 }
 
-function sendHref(img){
+const closeUrlInfo = document.querySelector('.city__close');
+closeUrlInfo.addEventListener('click', moveBack);
+
+
+
+function sendHref(img, arr){
     var pic = img;
-    document.getElementById('openPicture').innerHTML = 
-                        `<a href="#cities__info" class="city__close--white">&times;</a>
-                        <div class="img__content">
-                            <img src="./${pic}" alt="img main" class="img__full">
+    var finArr = arr;
+    
+    var finArr = arr.split(",");
+    
+    for (var i = 0; i < finArr.length; i++){
+        
+        if(img === finArr[i]){
+            document.getElementById('openPicture').innerHTML = 
+                        `<a href="#cities__info" class="city__close--white" id="city__close--white">&times;</a>
+                        <div class="img__content" id="img__content">
+                            <img src="./${pic}" id="${pic}" alt="img main" class="img__full">
+
                         </div>
+                         <div class="prev" id="prev" onclick="prev('${i}', '${finArr}')">&larr;</div>
+                         <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
                         `;
+            
+    }
+        
+    }
+    
+    
     
     const closeUrlFullImg = document.querySelector('.city__close--white');
     closeUrlFullImg.addEventListener('click', moveBack);
 }
 
+function next(arrI, arr){
+        var i = arrI;
+        var finArrAg = arr;
+        var finArr = arr.split(",");
+        i++;
+        var remVar = finArr[i-1];
+        if(i < finArr.length){
+        document.getElementById(remVar).remove();
+        document.getElementById('next').remove();
+        document.getElementById('prev').remove();
+        document.getElementById('city__close--white').remove();
+            document.getElementById('openPicture').innerHTML = 
+                        `<a href="#cities__info" class="city__close--white" id="city__close--white">&times;</a>
+                        <div class="img__content" id="img__content">
+                            <img src="${finArr[i]}" id="${finArr[i]}" alt="img main" class="img__full">
+                        </div>
+                         <div class="prev" id="prev" onclick="prev('${i}', '${finArr}')">&larr;</div>
+                         <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
+                        `;
+        }else{
+            i--;
+            document.getElementById(remVar).remove();
+            document.getElementById('next').remove();
+            document.getElementById('prev').remove();
+            document.getElementById('city__close--white').remove();
+            document.getElementById('openPicture').innerHTML = 
+                        `<a href="#cities__info" class="city__close--white" id="city__close--white">&times;</a>
+                        <div class="img__content" id="img__content">
+                            <img src="${finArr[i]}" id="${finArr[i]}" alt="img main" class="img__full">
+                        </div>
+                         <div class="prev" id="prev" onclick="prev('${i}', '${finArr}')">&larr;</div>
+                         <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
+                        `;
+        }
+    }
 
 
-
+function prev(arrI, arr){
+    var i = arrI;
+    var finArrAg = arr;
+    var finArr = arr.split(",");
+    i--;
+    var remVar = finArr[i+1];
+    if(i >= 0){
+        document.getElementById(remVar).remove();
+        document.getElementById('next').remove();
+        document.getElementById('prev').remove();
+        document.getElementById('city__close--white').remove();
+        document.getElementById('openPicture').innerHTML = 
+                        `<a href="#cities__info" class="city__close--white" id="city__close--white">&times;</a>
+                        <div class="img__content" id="img__content">
+                            <img src="${finArr[i]}" id="${finArr[i]}" alt="img main" class="img__full">
+                        </div>
+                         <div class="prev" id="prev" onclick="prev('${i}', '${finArr}')">&larr;</div>
+                         <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
+                        `;
+    }else{
+        i++;
+            document.getElementById(remVar).remove();
+            document.getElementById('next').remove();
+            document.getElementById('prev').remove();
+            document.getElementById('city__close--white').remove();
+            document.getElementById('openPicture').innerHTML = 
+                        `<a href="#cities__info" class="city__close--white" id="city__close--white">&times;</a>
+                        <div class="img__content" id="img__content">
+                            <img src="${finArr[i]}" id="${finArr[i]}" alt="img main" class="img__full">
+                        </div>
+                         <div class="prev" id="prev" onclick="prev('${i}', '${finArr}')">&larr;</div>
+                         <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
+                        `;
+    }
+}
 
 
 

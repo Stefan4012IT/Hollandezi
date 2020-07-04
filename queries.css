@@ -83,7 +83,7 @@
     .hey-you > div:nth-child(odd) p:nth-child(odd) {
         width: auto;
         text-align: center;
-        animation: moveDiagonalRightBoottom 5s ease-in;
+        animation: none;
         color: red;
     }
 
@@ -91,7 +91,7 @@
     .hey-you > div:nth-child(odd) p:nth-child(odd) a:visited{
         text-align: center;
         width: auto;
-        animation: moveDiagonalRightBoottom 5s ease-in;
+        animation: none;
         color: inherit;
         text-decoration: none;
     }
@@ -100,7 +100,7 @@
     .hey-you > div:nth-child(even) p:nth-child(even){
         width: auto;
         text-align: center;
-        animation: moveDiagonalRightTop 5s ease-in;
+        animation: none;
     }
 
     .hey-you > div:nth-child(even) p:nth-child(even) a:link,
@@ -108,7 +108,7 @@
         width: auto;
         text-align: center;
         color: inherit;
-        animation: moveDiagonalRightTop 5s ease-in;
+        animation: none;
         text-decoration: none;
     }
 
@@ -116,7 +116,7 @@
     .hey-you > div:nth-child(even) p:nth-child(odd){
         text-align: center;
         width: auto;
-        animation: moveDiagonalLeftBottom 5s ease-in;
+        animation: none;
         color: red;
     }
 
@@ -125,7 +125,7 @@
         width: auto;
         text-align: center;
         color: inherit;
-        animation: moveDiagonalLeftBottom 5s ease-in;
+        animation: none;
         text-decoration: none;
     }
 
@@ -133,7 +133,7 @@
     .hey-you > div:nth-child(odd) p:nth-child(even){
         width: auto;
         text-align: center;
-        animation: moveDiagonalLeftTop 5s ease-in;
+        animation: none;
     }
 
     .hey-you > div:nth-child(odd) p:nth-child(even) a:link,
@@ -141,7 +141,7 @@
         width: auto;
         text-align: center;
         color: inherit;
-        animation: moveDiagonalLeftTop 5s ease-in;
+        animation: none;
         text-decoration: none;
     }
     
@@ -166,5 +166,7 @@
         top: 28px;
         right: 38px;
     }
+    
+    
     
 }
