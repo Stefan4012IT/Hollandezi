@@ -34,12 +34,115 @@
 }
 
 @media only screen and (max-device-width:650px){
-    .box-name h2 {
-        font-size: 35px;
+    
+    body{
+        grid-template-columns: none;
+        overflow-y: auto;
     }
     
+    .box-name h2 {
+        font-size: 55px;
+        letter-spacing: 25px;
+    }
+    
+    .hey-you {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        height: 85vh;
+    }
+    .hey-you > div:nth-child(odd) {
+        grid-column: 1/2;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        white-space: nowrap;
+    }
+
+    .hey-you > div:nth-child(even) {
+        grid-column: 2/3;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: nowrap;
+    }
+
+    .hey-you > div:nth-child(odd) p {
+        margin-right: 20%;
+    }
+
+    .hey-you > div:nth-child(even) p {
+        margin-left: 20%;
+    }
     .hey-you > div p {
-        font-size: 14px;
+        font-size: 18px;
+    }
+    
+    /* First group */
+    .hey-you > div:nth-child(odd) p:nth-child(odd) {
+        width: auto;
+        text-align: center;
+        animation: moveDiagonalRightBoottom 5s ease-in;
+        color: red;
+    }
+
+    .hey-you > div:nth-child(odd) p:nth-child(odd) a:link,
+    .hey-you > div:nth-child(odd) p:nth-child(odd) a:visited{
+        text-align: center;
+        width: auto;
+        animation: moveDiagonalRightBoottom 5s ease-in;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Second group */
+    .hey-you > div:nth-child(even) p:nth-child(even){
+        width: auto;
+        text-align: center;
+        animation: moveDiagonalRightTop 5s ease-in;
+    }
+
+    .hey-you > div:nth-child(even) p:nth-child(even) a:link,
+    .hey-you > div:nth-child(even) p:nth-child(even) a:visited {
+        width: auto;
+        text-align: center;
+        color: inherit;
+        animation: moveDiagonalRightTop 5s ease-in;
+        text-decoration: none;
+    }
+
+    /* Thirth group */
+    .hey-you > div:nth-child(even) p:nth-child(odd){
+        text-align: center;
+        width: auto;
+        animation: moveDiagonalLeftBottom 5s ease-in;
+        color: red;
+    }
+
+    .hey-you > div:nth-child(even) p:nth-child(odd) a:link,
+    .hey-you > div:nth-child(even) p:nth-child(odd) a:visited {
+        width: auto;
+        text-align: center;
+        color: inherit;
+        animation: moveDiagonalLeftBottom 5s ease-in;
+        text-decoration: none;
+    }
+
+    /* Fourth group */
+    .hey-you > div:nth-child(odd) p:nth-child(even){
+        width: auto;
+        text-align: center;
+        animation: moveDiagonalLeftTop 5s ease-in;
+    }
+
+    .hey-you > div:nth-child(odd) p:nth-child(even) a:link,
+    .hey-you > div:nth-child(odd) p:nth-child(even) a:visited {
+        width: auto;
+        text-align: center;
+        color: inherit;
+        animation: moveDiagonalLeftTop 5s ease-in;
+        text-decoration: none;
     }
     
     .population {
