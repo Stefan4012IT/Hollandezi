@@ -235,5 +235,65 @@
     "photos": [
         "img/Leeuwarden/leeuwarden1.jpg", "img/Leeuwarden/leeuwarden2.jpg",  "img/Leeuwarden/leeuwarden3.jpg", "img/Leeuwarden/leeuwarden4.jpg", "img/Leeuwarden/leeuwarden5.jpeg", "img/Leeuwarden/leeuwarden6.jpg", "img/Leeuwarden/leeuwarden7.jpg", "img/Leeuwarden/leeuwarden8.jpg", "img/Leeuwarden/leeuwarden9.jpg", "img/Leeuwarden/leeuwarden10.jpg"
     ] 
+},
+{
+    "cityName": "Middelburg",
+    "population": "48,544",
+    "about":"Middelburg (Dutch: [ˈmɪdəlbʏrx] (About this soundlisten)) is a city and municipality in the south-western Netherlands serving as the capital of the province of Zeeland. Situated on the central peninsula of the Zeeland province, Midden-Zeeland (consisting of former islands Walcheren, Noord-Beveland and Zuid-Beveland), it has a population of about 48,000. In terms of technology, Middelburg played a role in the Scientific Revolution at the early modern period. The city was historically a center of lens crafting in the Golden Age of Dutch science and technology. The invention of the microscope and telescope is often credited to Middelburg spectacle-makers (including Zacharias Janssen and Hans Lippershey) in the late 16th century and early 17th century.",
+   
+    "links": [
+        { "wikipedia": "https://en.wikipedia.org/wiki/Middelburg"}
+    ],
+    "photos": [
+        "img/Middelburg/Middelburg1.jpg", "img/Middelburg/Middelburg2.jpg", "img/Middelburg/Middelburg3.jpg", "img/Middelburg/Middelburg4.jpg", "img/Middelburg/Middelburg5.jpg", "img/Middelburg/Middelburg6.jpg", "img/Middelburg/Middelburg7.jpg", "img/Middelburg/Middelburg8.jpg"
+    ] 
+},
+{
+    "cityName": "Gouda",
+    "population": "73,181",
+    "about":"Gouda (Dutch pronunciation: [ˈɣʌudaː] (About this soundlisten)) is a city and municipality in the west of the Netherlands, between Rotterdam and Utrecht, in the province of South Holland. Gouda has a population of 72,338 and is famous for its Gouda cheese, stroopwafels, many grachten, smoking pipes, and its 15th-century city hall. Its array of historic churches and other buildings makes it a very popular day trip destination. In the Middle Ages, a settlement was founded at the location of the current city by the Van der Goude family, who built a fortified castle alongside the banks of the Gouwe River, from which the family and the city took its name. The area, originally marshland, developed over the course of two centuries. By 1225, a canal was linked to the Gouwe and its estuary was transformed into a harbour. City rights were granted in 1272.",
+   
+    "links": [
+        { "wikipedia": "https://en.wikipedia.org/wiki/Gouda,_South_Holland"}
+    ],
+    "photos": [
+        "img/Gouda/Gouda1.jpg", "img/Gouda/Gouda2.jpg", "img/Gouda/Gouda3.jpg", "img/Gouda/Gouda4.jpg", "img/Gouda/Gouda5.jpg", "img/Gouda/Gouda6.jpg", "img/Gouda/Gouda7.jpg", "img/Gouda/Gouda8.jpg", "img/Gouda/Gouda9.jpg", "img/Gouda/Gouda10.jpg"
+    ] 
+},
+{
+    "cityName": "Lelystad",
+    "population": "77,893",
+    "about":"Lelystad (Dutch pronunciation: [ˈleːlistɑt] (About this soundlisten)) is a municipality and a city in the centre of the Netherlands, and it is the capital of the province of Flevoland. The city, built on reclaimed land, was founded in 1967 and was named after Cornelis Lely, who engineered the Afsluitdijk, making the reclamation possible. Lelystad is approximately 3 metres (9.8 feet) below sea level.</br> Lelystad is built on the seabed of the former Zuiderzee. About 6500 years ago this wetland was above high tide level and inhabited; the Netherlands have steadily subsided since. Near Lelystad at Swifterbant, the oldest human skeletons in Western Europe were discovered. Due to rising water levels and storms, the peatlands were washed away, and the Lacus Flevo (in Roman times) grew to be the Almere (Middle Ages) and became the Zuiderzee. The Zuiderzee (Southern Sea) was the main transport route from Amsterdam to the North Sea and the Hanseatic League cities. Due to the many shipwrecks in Flevoland, Lelystad now houses the National Centre for Maritime History, with a museum and the shipyard that has built the Batavia replica. After the Second World War the Zuiderzee Works continued, constructing the polder of Eastern Flevoland. In 1950 work commenced on several construction islands in the middle of the IJsselmeer. Lelystad-Haven was the largest island, and its wooden barracks housed a community of dyke-builders. In 1955 they reached the mainland, which made it possible to drive to Lelystad by car. One of the three pumping stations, which drained the polder in June 1957, was the diesel-powered Wortman in Lelystad-Haven. Until 1967 the only inhabitants of Lelystad were technical engineers and laborers and superintendents, living on the former construction island. ",
+
+    "links": [
+        { "wikipedia": "https://en.wikipedia.org/wiki/Lelystad"}
+    ],
+    "photos": [
+        "img/Lelystad/Lelystad1.jpg", "img/Lelystad/Lelystad2.jpg", "img/Lelystad/Lelystad3.jpg", "img/Lelystad/Lelystad4.jpg", "img/Lelystad/Lelystad5.jpg", "img/Lelystad/Lelystad6.jpg", "img/Lelystad/Lelystad7.jpg", "img/Lelystad/Lelystad8.jpg", "img/Lelystad/Lelystad9.jpg", "img/Lelystad/Lelystad10.jpg"
+    ] 
+}, 
+{
+    "cityName": "Volendam",
+    "population": "22,000",
+    "about":"Volendam (Dutch pronunciation: [ˌvoːlənˈdɑm]) is a village in North Holland in the Netherlands, in the municipality of Edam-Volendam. The town has about 22,000 inhabitants (November 2007) and is twinned with Coventry. </br>Originally, Volendam was the location of the harbor of the nearby Edam, which was situated at the mouth of the IJ bay. In 1357, the inhabitants of Edam dug a shorter canal to the Zuiderzee with its own separate harbor. This removed the need for the original harbor, which was then dammed and used for land reclamation. Farmers and local fishermen settled there, forming the new community of Vollendam, which literally meant something like 'Filled dam'. In the early part of the 20th century it became something of an artists' retreat, with both Picasso and Renoir spending time here. The majority of the population belongs to the Roman Catholic Church, which is deeply connected to the village culture. Historically, many missionaries and bishops grew up in Volendam. Today there is the chapel of Our Lady of the Water, which is located in a village park. ",
+
+    "links": [
+        { "wikipedia": "https://en.wikipedia.org/wiki/Volendam"}
+    ],
+    "photos": [
+        "img/Volendam/Volendam1.jpg", "img/Volendam/Volendam2.jpg", "img/Volendam/Volendam3.jpg", "img/Volendam/Volendam4.jpg", "img/Volendam/Volendam5.jpg", "img/Volendam/Volendam6.jpg", "img/Volendam/Volendam7.jpg", "img/Volendam/Volendam8.jpg", "img/Volendam/Volendam9.jpg", "img/Volendam/Volendam10.jpg", "img/Volendam/Volendam11.jpg"
+    ] 
+},   
+{
+    "cityName": "Best",
+    "population": "29,821",
+    "about":"Best (About this soundListen (help·info)) is a municipality and a village in the southern Netherlands. It is situated northwest of the city Eindhoven, and is also part of the agglomeration of this city.The headquarters of Europe's largest meat processor Vion NV are located in Best, as are Philips Healthcare and the Bata Shoe Organization's \"Bata Protective\" operations (B2B). </br> The village used to be a part of Oirschot, a nearby town. But as Best was situated on the state road from Amsterdam to Maastricht, this often created difficulties. Each time the military wanted to quarter troops in Best, they had to request to be stationed in Oirschot, 10 km away, for this to be allowed. Because of this difficulty, the government decided to separate Best from Oirschot in 1819. Archaeological excavations around the village suggest settlement in the area dating back to the Roman era. The Armenhoef is a monumental farm on the Oirschotseweg 117 in Best. This stable is the oldest still in use within Western Europe. Historical building research in 2009 showed that the wooden frame of the stable dates back to 1263. The living part of the farm itself is built in recent times, in 1640 at the earliest, but probably around 1680. The farm is an official monument.  The first written text about Best dates back to 1421.",
+
+    "links": [
+        { "wikipedia": "https://en.wikipedia.org/wiki/Best,_Netherlands"}
+    ],
+    "photos": [
+        "img/Best/Best1.jpg", "img/Best/Best2.jpg", "img/Best/Best3.jpg", "img/Best/Best4.jpg"
+    ] 
 }
 ]
