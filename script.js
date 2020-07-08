@@ -23,7 +23,7 @@ function sendID(id) {
                             for (var key in obj){
                                 var attrName = key;
                                 var attrValue = obj[key];
-                                document.getElementById("link").insertAdjacentHTML("beforeend", `<a href="${attrValue}" class="webLinks" id="webLinks">${attrName} ||| </a>`)
+                                document.getElementById("link").insertAdjacentHTML("beforeend", `<a href="${attrValue}" class="webLinks" id="webLinks" onclick="moveIndex()">${attrName} ||| </a>`)
                             }
                         }
                     let arrImg = [];
@@ -57,12 +57,13 @@ closeUrlInfo.addEventListener('click', moveBack);
 
 
 
+
+
+
 function sendHref(img, arr){
     var pic = img;
     var finArr = arr;
-    
     var finArr = arr.split(",");
-    
     for (var i = 0; i < finArr.length; i++){
         
         if(img === finArr[i]){
@@ -80,11 +81,11 @@ function sendHref(img, arr){
         
     }
     
-    
-    
     const closeUrlFullImg = document.querySelector('.city__close--white');
     closeUrlFullImg.addEventListener('click', moveBack);
 }
+
+
 
 function next(arrI, arr){
         var i = arrI;
@@ -93,6 +94,7 @@ function next(arrI, arr){
         i++;
         var remVar = finArr[i-1];
         if(i < finArr.length){
+            
         document.getElementById(remVar).remove();
         document.getElementById('next').remove();
         document.getElementById('prev').remove();
@@ -120,7 +122,17 @@ function next(arrI, arr){
                          <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
                         `;
         }
+    const closeUrlFullImg = document.querySelector('.city__close--white');
+    closeUrlFullImg.addEventListener('click', moveIndex);
+    
     }
+
+    
+    
+
+
+
+
 
 
 function prev(arrI, arr){
@@ -157,7 +169,11 @@ function prev(arrI, arr){
                          <div class="next" id="next" onclick="next('${i}', '${finArr}')">&rarr;</div>
                         `;
     }
+    
+    const closeUrlFullImg = document.querySelector('.city__close--white');
+    closeUrlFullImg.addEventListener('click', moveIndex);
 }
+
 
 
 
@@ -165,14 +181,18 @@ function moveBack() {
         window.history.go(-1);
     }
 
+function moveIndex() {
+    window.history.pushState(null, null, 'index.html');
+}
 
 
 
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    

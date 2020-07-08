@@ -300,6 +300,7 @@ p {
     overflow-x: auto;
     overflow-y: hidden;
     background-color: #AE1C28;
+    transition: all .1s;
 }
 
 

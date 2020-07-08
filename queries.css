@@ -166,7 +166,9 @@
         top: 28px;
         right: 38px;
     }
-    
+    .openPicture {
+        grid-template-rows: 5vh 105vh;
+    }
     
     
 }
