@@ -172,19 +172,23 @@ p {
     background-color: rgba(255, 255, 255, .85);
     z-index: 1000;
     visibility: hidden;
-    transition: all .3s;
     overflow-x: hidden;
     overflow-y: auto;
     @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)){
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, .3);
     }
+    
 }
 
 .cities__info:target {
-    opacity: 1;
     visibility: visible;
     overflow-y: auto;
+    animation: easeOn .5s ease;
+}
+
+.cities__info{
+    animation: easeOff 2s linear;
 }
 
 .cities__info::-webkit-scrollbar {
@@ -221,7 +225,7 @@ p {
     color: #efefef;
     right: 0;
     text-decoration: none;
-    transition: all .2s;
+    /*transition: all .2s;*/
 }
 
 .city__close--white:hover {
@@ -300,7 +304,6 @@ p {
     overflow-x: auto;
     overflow-y: hidden;
     background-color: #AE1C28;
-    transition: all .1s;
 }
 
 
@@ -325,6 +328,9 @@ p {
     margin-right: 30px;
 }
 
+.cities__info .profilPhoto {
+    transition: transform .8s;
+} 
 
 .profilPhoto {
     position: relative;
@@ -361,6 +367,7 @@ p {
 .openPicture:target {
     opacity: 1;
     visibility: visible;
+    animation: easeOn .5s ease-in;
 }
 
 .img__content {
@@ -668,5 +675,36 @@ p {
     }
     100% {
         text-shadow: 0px 0px 15px #FF6EC7;
+    }
+}
+
+@keyframes easeOn {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: .33;
+    }
+    66% {
+         opacity: .66;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes easeOff {
+    0% {
+        opacity: 1;
+    }
+    33% {
+        opacity: .66;
+    }
+    66% {
+        opacity: .99;
+        transform: scale(.33);
+    }
+    100% {
+        opacity: 0;
     }
 }
